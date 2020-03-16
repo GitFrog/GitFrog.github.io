@@ -18,7 +18,21 @@ What is a neural network, and when would you want to use one? Let's start with t
 
 <img src="images/xkcd_comic.png" alt="xkcd comic" class="inline"/>
 
-Here we have two problems that our programmer is being asked to solve. The first one is relatively easy, since most photos contain geological information embedded in the image. The second one is bordering on insane. How would you go about writing a program that could "read" an image and not only tell that it contains a bird, but go one step further and identify the 
+Here we have two problems that our programmer is being asked to solve. The first one is relatively easy, since most photos contain geological information embedded in the image. The second one is bordering on insane. How would you go about writing a program that could "read" an image and tell you it contains a bird. It's easy for us to look at an image and carry out this task. But to a computer, each image is just a grid of numbers, each number representing a pixel intensity. Writing a program that can read these numbers over multiple images and somehow know which numbers represent a bird, and which do not, is virtually impossible.
+
+Or is it? 
+
+Enter neural networks, which are very good at solving very difficult questions.
+
+Okay, fair enoguh, but what ARE neural networks?
+
+Technically, they represent a collection of interconnected decision pathways which work together through a probabilistic model to categorize complex imput data. But what the hell does that mean?
+
+
+
+
+
+
 
 
 
