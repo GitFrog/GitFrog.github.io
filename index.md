@@ -24,15 +24,11 @@ Or is it?
 
 Enter neural networks, which are very good at solving very difficult questions.
 
-Okay, fair enoguh, but what ARE neural networks?
+Okay, fair enough, but what ARE neural networks?
 
-Technically, they represent a collection of interconnected decision pathways which work together through a probabilistic model to categorize complex imput data. But what the hell does that mean?
+Technically, they represent a collection of interconnected decision pathways which work together through a probabilistic model to categorize complex input data. But what the hell does that mean? Well, when we look at a picture, we don't have any problems telling if it contains a bird. Sure, there might be some images that cause some issues for us, but for the most part we don't have any problems with this very complex task. This tells us something very important. That while the task may be complex, it is not impossible, and that there DOES exist an algorithm that can do the job...it's just that discovering that algorithm is virtually impossible. So instead of designing this algorithm, what if there was a way to discover it instead? This is basically what a neural network does...it uses example data which has been labelled with the correct answers to discover the best algorithm to successfully identify future data.
 
-
-
-
-
-
+Okay, let's back up, because this is getting a little more abstract than I wanted...and it doesn't really answer the questions about what a neural network is. So let's slowly build a small one up from scratch and see if that does a better job.
 
 
 
