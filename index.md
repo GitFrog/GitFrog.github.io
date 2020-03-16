@@ -1,6 +1,8 @@
 ## Welcome to my Neural Net Blog
 
-My name is Lee Hulse-Smith, and I'm a Full Stack Software Developer at the Centre of Forensic Sciences in Toronto, Canada. I first became interested in neural networks after following the autonomous driving work being done by Tesla, Waymo, and Uber.
+My name is Lee Hulse-Smith, and I'm a Full Stack Software Developer at the Centre of Forensic Sciences in Toronto, Canada. 
+
+I first became interested in neural networks after following the autonomous driving work being done by Tesla, Waymo, and Uber.
 
 The purpose of this blog is to track my progress and centralize resources as I learn about neural networks.
 
@@ -12,4 +14,5 @@ Also, becuase I learn best by doing, my plan is to build a neural network in Jav
 
 _March 16, 2020_
 
+What is a neural network? 
 
