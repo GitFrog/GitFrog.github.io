@@ -14,9 +14,12 @@ Also, becuase I learn best by doing, my plan is to build a neural network in Jav
 
 _March 16, 2020_
 
-What is a neural network? Have you ever seen one of those coin sorter towers?
+What is a neural network, and when would you want to use one? Let's start with the following [xkcd](https://xkcd.com/) comic. 
 
-<img src="images/coin-sorting-trays.jpg" alt="picture of a coin sorter tray" class="inline"/>
+<img src="images/xkcd_comic.png" alt="xkcd comic" class="inline"/>
+
+Here we have two problems that our programmer is being asked to solve. The first one is relatively easy, since most photos contain geological information embedded in the image. The second one is bordering on insane. How would you go about writing a program that could "read" an image and not only tell that it contains a bird, but go one step further and identify the 
+
 
 
 
