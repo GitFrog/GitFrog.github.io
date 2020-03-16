@@ -16,7 +16,7 @@ _March 16, 2020_
 
 What is a neural network? Have you ever seen one of those coin sorter towers?
 
-<img src="images/coin-sorting-trays" alt="picture of a coin sorter tray" class="inline"/>
+<img src="images/coin-sorting-trays.jpg" alt="picture of a coin sorter tray" class="inline"/>
 
 
 
