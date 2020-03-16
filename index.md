@@ -16,3 +16,5 @@ _March 16, 2020_
 
 What is a neural network? 
 
+<img src="images/photo.jpg" alt="hi" class="inline"/>
+
