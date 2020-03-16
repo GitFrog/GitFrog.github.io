@@ -14,7 +14,9 @@ Also, becuase I learn best by doing, my plan is to build a neural network in Jav
 
 _March 16, 2020_
 
-What is a neural network? 
+What is a neural network? Have you ever seen one of those coin sorter towers?
+
+<img src="images/coin" alt="hi" class="inline"/>
 
 
 
