@@ -1,8 +1,11 @@
-## Welcome to GitHub Pages
+## Welcome to my Neural Net Blog
 
-You can use the [editor on GitHub](https://github.com/GitFrog/GitFrog.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+The purpose of this blog is to track my progress and centralize resources as I learn about neural networks.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+My main resource for learning will be the [Convolution Deep Learning For Visual Recognition](http://cs231n.stanford.edu/) taught by [Andrej Karpathy](https://cs.stanford.edu/people/karpathy/). All of the [2016 course content](https://www.youtube.com/playlist?list=PLkt2uSq6rBVctENoVBg1TpCC7OQi31AlC) is available free online.
+
+Also, becuase I learn best by doing, my plan is to build a neural network in Javascript using the [MNIST database](http://yann.lecun.com/exdb/mnist/) collection of 60,000 handwitten integers between 0 and 9 to train and test the network.
+
 
 ### Markdown
 
