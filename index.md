@@ -36,9 +36,20 @@ Before we dive in, it's important to know that there are [many types](https://to
 
 So let's dive in!
 
-We're going to build something very simple that works from beginning to end, then we're going to start layering on top of that.
+We're going to build something very simple that works from beginning to end, then we're going to start layering on top of that to create a working neural network.
 
-<img src="images/network_01.jpg" alt="network photo 101" class="inline"/>
+Below is a basic diagram showing some circles connected with arrows. We're going to call the circles "nodes" and the arrows "edges". So we have input, function, and output nodes, and two edges connecting them together.
+
+<img src="images/network_01.jpg" alt="network photo 01" class="inline"/>
+
+In this example, our input node will be a single number, which we will send over to the function node where we'll get all mathematical on it, the output of which we will send over to the output node. So far so good? Let's plug in some numbers to make this a little less abstract...
+
+<img src="images/network_02.jpg" alt="network photo 02" class="inline"/>
+
+So here out input node has a value of 10, and we're going to use two variables to transform it. The first is the weight (w=0.5) and notice that I've placed this variable on the edge arrow between the input and function node. This will become important later. Next we have a bias (b=2) which I've placed inside the function node. And finally, let's use all these new friends to transform our input variable =(w*10)+b)  =(0.5*10)+2  = 7. And finally, let's send that final value (7) over to our output node where it will sit there happy and content.
+
+
+
 
 
 
