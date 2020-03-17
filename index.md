@@ -48,7 +48,17 @@ In this example, our input node will be a single number, which we will send over
 
 So here out input node has a value of 10, and we're going to use two variables to transform it. The first is the weight (w=0.5) and notice that I've placed this variable on the edge arrow between the input and function node. This will become important later. Next we have a bias (b=2) which I've placed inside the function node. And finally, let's use all these new friends to transform our input variable =(w*10)+b)  =(0.5*10)+2  = 7. And finally, let's send that final value (7) over to our output node where it will sit there happy and content.
 
-But it is not happy. Because we know that the output is supposed to be 3, not 7, and now we need to adjust things so that we get the right output. But what do I mean that "the output is supposed to be 3"? Okay, let me back up for a second. When we first initialize a neural network, it's dumb....doesn't know a damn thing...which means we have to train it. And you can't train is you don't know what the right answer is. Let's go back to image recognition of birds as an example. At some point we're going be plugging images into our neural network, and our output will either be "bird" or "no bird". But at the beginning the system is dumb and it needs us to tell it the answer so it can adjust it's inner settings to get itself closer to the right answer.
+But it is not happy. Because we know that the output is supposed to be 3, not 7, and now we need to adjust things so that we get the right output. But what do I mean that "the output is supposed to be 3"? Okay, let me back up for a second. When we first initialize a neural network, it's dumb....doesn't know a damn thing...which means we have to train it. And you can't train it unless you know what the right answer is suppossed to be. Let's go back to image recognition of birds as an example. At some point we're going be plugging images into our neural network, and our output will either be "bird" or "no bird". But at the beginning the system is dumb and it needs us to tell it the answer so it can adjust it's inner settings to get itself closer to the right answer.
+
+Which leads us to something called "back propogation"
+
+## Back Propogation
+
+So we have an output value of 7, but we know the TRUE value is 3, and we have access to two variables (weight and bias) that we can tweak to get us there. Now we could just change the weight to 0.1, leave the bias where it is, and we're done! Well, that would work here with just three nodes, but very soon we are going to be dealing with hundreds of interconnected nodes, and eyeballing it like that just isn't going to work. So let's come up with a more mathematical way to adjust our weight and balance now, so we're in a better position moving forward.
+
+
+
+
 
 
 
