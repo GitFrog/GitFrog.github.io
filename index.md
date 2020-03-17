@@ -60,12 +60,13 @@ First we need to calcualte how far off our current value is. That's pretty easy,
 
 We're not going to add more nodes.....instead, let's add more inputs and see what our outputs are next to the desired values
 
-Input     Output  Desired
-10        7       3
-14        9       3.8
-22        13      5.4
-2         3       1.4
-102       53      21.4 
+|Input     |Output    |Desired
+|----------|----------|----------
+|  10      |  7       |  3
+|  14      |  9       |  3.8
+|  22      |  13      |  5.4
+|  2       |  3       |  1.4
+|  102     |  53      |  21.4 
 
 
 
