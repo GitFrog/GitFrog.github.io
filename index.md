@@ -68,7 +68,17 @@ We're not going to add more nodes.....instead, let's add more inputs and see wha
 |  2       |  3       |  1.4
 |  102     |  53      |  21.4 
 
+Now, let's calculate the error between Output and Desired, but lets do two extra things. First, let's calculate the ABSOLUTE error, and then lets SQUARE the error, and see what we have.
 
+|Input     |Output    |Desired   |Abs Error | Sq Error
+|----------|----------|----------|----------|----------
+|  10      |  7       |  3       |  4       |  16
+|  14      |  9       |  3.8     |  5.2     |  27.04
+|  22      |  13      |  5.4     |  7.6     |  57.76
+|  2       |  3       |  1.4     |  1.6     |  2.56   
+|  102     |  53      |  21.4    |  21.6    |  466.56
+
+Let's talk about these two things. First, by looking at the ABSOLUTE error, we get rid of any negative errors, which helps us normalize how big or small each error is. If we have two error values of -10 and +10, these two values both tell us that the output is 10 units away from the desired output, so by taking an absolute value, we place all error values on the same side of the zero. Next, if we square these error values, we amplify how far away from the desired output we are. You can see this effect in the two last rows.
 
 
 
