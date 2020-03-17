@@ -1,18 +1,18 @@
-## Welcome to my Neural Net Blog
+## Welcome to my Neural Net Tutorial
+
+_March 16 2020_
 
 My name is Lee Hulse-Smith, and I'm a Full Stack Software Developer at the Centre of Forensic Sciences in Toronto, Canada. 
 
-I first became interested in neural networks after following the autonomous driving work being done by Tesla, Waymo, and Uber.
+I became interested in neural networks a few years ago following the autonomous driving work being done by Tesla, Waymo, and Uber.
 
-The purpose of this blog is to track my progress and centralize resources as I learn about neural networks.
+The purpose of this tutorial is to track my own progress and centralize resources as I learn about neural networks. But if this helps you too, then bonus!
 
 My main resource for learning will be the [Convolution Deep Learning For Visual Recognition](http://cs231n.stanford.edu/) taught by [Andrej Karpathy](https://cs.stanford.edu/people/karpathy/). All of the [2016 course content](https://www.youtube.com/playlist?list=PLkt2uSq6rBVctENoVBg1TpCC7OQi31AlC) is available free online.
 
 Also, becuase I learn best by doing, my plan is to build a neural network in Javascript using the [MNIST database](http://yann.lecun.com/exdb/mnist/) collection of 60,000 handwitten integers between 0 and 9 to train and test the network.
 
 ## Introduction
-
-_March 16, 2020_
 
 What is a neural network, and when would you want to use one? Let's start with the following [xkcd](https://xkcd.com/) comic. 
 
@@ -30,11 +30,22 @@ Technically, they represent a collection of interconnected decision pathways whi
 
 Okay, let's back up, because this is getting a little more abstract than I wanted...and it doesn't really answer the questions about what a neural network is. So let's slowly build a small one up from scratch and see if that does a better job.
 
-## Convolution Neural Network
+## Convolution Neural Network - The Beginning
 
-Before we dive in, it's important to know that there are [many types](https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464) of neural networks, but we are going to concentrate on a type of deep feed forward (DFF) neural network that represents an excellent baseline for understanding how they all work. 
+Before we dive in, it's important to know that there are [many types](https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464) of neural networks, but we are going to concentrate on a type of deep feed forward (DFF) neural network that represents an excellent baseline for understanding how they all work.
 
 So let's dive in!
+
+We're going to build something very simple that works from beginning to end, then we're going to start layering on top of that.
+
+<img src="images/network_01.jpg" alt="network photo 101" class="inline"/>
+
+
+
+
+
+
+
 
 
 
