@@ -2,7 +2,7 @@
 
 _March 16 2020_
 
-My name is Lee Hulse-Smith, and I'm a Full Stack Software Developer at the Centre of Forensic Sciences in Toronto, Canada. 
+My name is Lee Hulse-Smith (aka Independent Variable :) ), and I'm a Full Stack Software Developer at the Centre of Forensic Sciences in Toronto, Canada. 
 
 I became interested in neural networks a few years ago following the autonomous driving work being done by Tesla, Waymo, and Uber.
 
@@ -46,7 +46,7 @@ In this example, our input node will be a single number, which we will send over
 
 <img src="images/network_02.jpg" alt="network photo 02" class="inline"/>
 
-So here out input node has a value of 10, and we're going to use two variables to transform it. The first is the weight (w=0.5) and notice that I've placed this variable on the edge arrow between the input and function node. This will become important later. Next we have a bias (b=2) which I've placed inside the function node. And finally, let's use all these new friends to transform our input variable =(w*10)+b)  =(0.5*10)+2  = 7. And finally, let's send that final value (7) over to our output node where it will sit there happy and content.
+So here out input node has a value of 10, and we're going to use two variables to transform it. The first is the weight (w=0.5) and notice that I've placed this variable on the edge arrow between the input and function node. This will become important later. Next we have a bias (b=2) which I've placed inside the function node. And finally, let's use all these new friends to transform our input variable =(w10)+b  =(0.5)(10)+2  = 7. And finally, let's send that final value (7) over to our output node where it will sit there happy and content.
 
 But it is not happy. Because we know that the output is supposed to be 3, not 7, and now we need to adjust things so that we get the right output. But what do I mean that "the output is supposed to be 3"? Okay, let me back up for a second. When we first initialize a neural network, it's dumb....doesn't know a damn thing...which means we have to train it. And you can't train it unless you know what the right answer is suppossed to be. Let's go back to image recognition of birds as an example. At some point we're going be plugging images into our neural network, and our output will either be "bird" or "no bird". But at the beginning the system is dumb and it needs us to tell it the answer so it can adjust it's inner settings to get itself closer to the right answer.
 
@@ -54,7 +54,23 @@ Which leads us to something called "back propogation"
 
 ## Back Propogation
 
-So we have an output value of 7, but we know the TRUE value is 3, and we have access to two variables (weight and bias) that we can tweak to get us there. Now we could just change the weight to 0.1, leave the bias where it is, and we're done! Well, that would work here with just three nodes, but very soon we are going to be dealing with hundreds of interconnected nodes, and eyeballing it like that just isn't going to work. So let's come up with a more mathematical way to adjust our weight and balance now, so we're in a better position moving forward.
+So we have an output value of 7, but we know the TRUE value is 3, and we have access to two variables (weight and bias) that we can tweak to get us there. Now we could just change the weight to 0.1, leave the bias where it is, and we're done! Well, that would work here with just three nodes, but very soon we are going to be dealing with hundreds of interconnected nodes, and eyeballing it like that just isn't going to work. So let's come up with a more mathematical way to adjust our weight and bias now, so we're in a better position moving forward.
+
+First we need to calcualte how far off our current value is. That's pretty easy, we have 7 and we want 3, so we're off by 4. But once again, we need to get ourselves prepared for when the complexity of our network increases, so maybe we should ramp up our complexity now so things make a little more sense.
+
+We're not going to add more nodes.....instead, let's add more inputs and see what our outputs are next to the desired values
+
+Input     Output  Desired
+10        7       3
+14        9       3.8
+22        13      5.4
+2         3       1.4
+102       53      21.4 
+
+
+
+
+
 
 
 
