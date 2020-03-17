@@ -56,9 +56,7 @@ Which leads us to something called "back propogation"
 
 So we have an output value of 7, but we know the TRUE value is 3, and we have access to two variables (weight and bias) that we can tweak to get us there. Now we could just change the weight to 0.1, leave the bias where it is, and we're done! Well, that would work here with just three nodes, but very soon we are going to be dealing with hundreds of interconnected nodes, and eyeballing it like that just isn't going to work. So let's come up with a more mathematical way to adjust our weight and bias now, so we're in a better position moving forward.
 
-First we need to calcualte how far off our current value is. That's pretty easy, we have 7 and we want 3, so we're off by 4. But once again, we need to get ourselves prepared for when the complexity of our network increases, so maybe we should ramp up our complexity now so things make a little more sense.
-
-We're not going to add more nodes.....instead, let's add more inputs and see what our outputs are next to the desired values
+First we need to calcualte how far off our current value is. That's pretty easy, we have 7 and we want 3, so we're off by 4. But once again, we need to get ourselves prepared for when the problem we are trying to answer is a little more complex than this. So let's add a few more input values to play with. Below is a list of 5 input values, along with their associated Output and Desired (True) values
 
 |Input     |Output    |Desired
 |----------|----------|----------
@@ -68,7 +66,51 @@ We're not going to add more nodes.....instead, let's add more inputs and see wha
 |  2       |  3       |  1.4
 |  102     |  53      |  21.4 
 
-Now, let's calculate the error between Output and Desired, but lets do two extra things. First, let's calculate the ABSOLUTE error, and then lets SQUARE the error, and see what we have.
+So now it's a little less clear what our weight and bias should be for all these input values. That said, you could probably figure it out, but that's because there is a direct linear relationship between the Input and Desired values. That will not be the case when we start to scale up. In fact, this is the whole reason why we would use a neural network...to uncover non-linear relationships.
+
+Okay, back to the problem at hand. Now we have these five inputs, but let's feed them into our neural network one at at time to understand how this works. 
+
+We need to calculate the error between the Output and Desired, but lets also do two extra things. Lets also calculate the ABSOLUTE error, and then let's SQUARE the error, and see what we have.
+
+
+|Input     |Output    |Desired   |Abs Error | Sq Error
+|----------|----------|----------|----------|----------
+|  10      |  7       |  3       |  4       |  16
+|  14      |  9       |          |          |  
+|  22      |  13      |          |          |  
+|  2       |  3       |          |          |  
+|  102     |  53      |          |          |  
+
+
+Okay, why did we do that?. First, by looking at the ABSOLUTE error, we get rid of any negative errors, which helps us normalize how big or small each error is. If we have two error values of -10 and +10, these two values both tell us that the output is 10 units away from the desired output, so by taking an absolute value, we place all error values on the same side of the zero. Next, if we square these error values, we amplify how far away from the desired output we are. For this input, our Square Error is only jumps from 4 to 16....but in the last row we're going to see that same jump go from 21 to 466. Basically, we're making larger error stand out more.
+
+## Differentiation
+
+Okay, the name of the game now is to use our training data, the Inputs, to slowly nudge our weight and bias value in the proper direction. To do this, we're going to make a very small change to our weight and bias, and then figue out if that change was good.
+
+Let's start with the weight....let's see what happens to the Sq Error if we change it from w=0.5 to w=0.501.
+
+|Input     |Output    |Desired   |Abs Error | Sq Error(w=3) | Sq Error(w=.501)
+|----------|----------|----------|----------|---------------|-----------------
+|  10      |  7       |  3       |  4       |  16           | 16.0801
+|  14      |  9       |          |          |               | 
+|  22      |  13      |          |          |               |
+|  2       |  3       |          |          |               |
+|  102     |  53      |          |          |               |
+
+Now let's back up and reset out w back to 0.5, but change our bias to 2.01
+
+|Input     |Output    |Desired   |Abs Error | Sq Error(b=2) | Sq Error(b=2.01)
+|----------|----------|----------|----------|---------------|-----------------
+|  10      |  7       |  3       |  4       |  16           | 16.0801
+|  14      |  9       |          |          |               | 
+|  22      |  13      |          |          |               |
+|  2       |  3       |          |          |               |
+|  102     |  53      |          |          |               |
+
+In both cases, our Square Error value has increased slighly, which would suggest that we should decrease both our weight and bias values if we want to increase the fitness of our neural network to the problem at hand.
+
+
 
 |Input     |Output    |Desired   |Abs Error | Sq Error
 |----------|----------|----------|----------|----------
@@ -77,9 +119,6 @@ Now, let's calculate the error between Output and Desired, but lets do two extra
 |  22      |  13      |  5.4     |  7.6     |  57.76
 |  2       |  3       |  1.4     |  1.6     |  2.56   
 |  102     |  53      |  21.4    |  21.6    |  466.56
-
-Let's talk about these two things. First, by looking at the ABSOLUTE error, we get rid of any negative errors, which helps us normalize how big or small each error is. If we have two error values of -10 and +10, these two values both tell us that the output is 10 units away from the desired output, so by taking an absolute value, we place all error values on the same side of the zero. Next, if we square these error values, we amplify how far away from the desired output we are. You can see this effect in the two last rows.
-
 
 
 
