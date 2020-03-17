@@ -30,6 +30,12 @@ Technically, they represent a collection of interconnected decision pathways whi
 
 Okay, let's back up, because this is getting a little more abstract than I wanted...and it doesn't really answer the questions about what a neural network is. So let's slowly build a small one up from scratch and see if that does a better job.
 
+## Convolution Neural Network
+
+Before we dive in, it's important to know that there are [many types](https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464) of neural networks, but we are going to concentrate on a type of deep feed forward (DFF) neural network that represents an excellent baseline for understanding how they all work. 
+
+So let's dive in!
+
 
 
 
