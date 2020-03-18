@@ -108,36 +108,17 @@ Now let's back up and reset out w back to 0.5, but change our bias to 2.01
 |  2       |  3       |          |          |               |
 |  102     |  53      |          |          |               |
 
-In both cases, our Square Error value has increased slighly, which would suggest that we should decrease both our weight and bias values if we want to increase the fitness of our neural network to the problem at hand.
+In both cases, our Square Error value has increased slighly, which would suggest that we should decrease both our weight and bias values if we want to increase the fitness of our neural network to the problem at hand. 
 
+But we can do this calculation a little bit better using derivatives, or in other words, by examining the rate of change towards to right value for this particular weight and bias adjustment.
 
+So for the weight, we increaed it by 0.001, and this resulted in a Square Error difference of 0.801. Divide 0.801 by 0.001 and we get an 801x rate of change. This gives us more information. First, the rate of change is positive, which tells us we need to decrease our weight...but we already knew that. Second, it gives us some idea of how far away we are from an ideal weight value, becuase as we get closer, this rate of change will start to decrease until we hit a zero mark.
 
-|Input     |Output    |Desired   |Abs Error | Sq Error
-|----------|----------|----------|----------|----------
-|  10      |  7       |  3       |  4       |  16
-|  14      |  9       |  3.8     |  5.2     |  27.04
-|  22      |  13      |  5.4     |  7.6     |  57.76
-|  2       |  3       |  1.4     |  1.6     |  2.56   
-|  102     |  53      |  21.4    |  21.6    |  466.56
+If we do the same thing for our bias, we get an 80.1x rate of change. It is also a positive value so we need to decreate our bias, and the rate of change is less than it was for the weight, implying that perhaps our current bias value is not as far off from an ideal value as our weight currently is.
 
+From here we could adjust our weight and/or bias and run the second Input, rinse/repeat, and slowly over many Inputs our function will reach a steady state where our weight and bias derivative is zero, and we now have a pretty well trained, albiet very simple, neural network.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Non Linear Modeling
 
 
 
