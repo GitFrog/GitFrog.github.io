@@ -118,7 +118,14 @@ If we do the same thing for our bias, we get an 80.1x rate of change. It is also
 
 From here we could adjust our weight and/or bias and run the second Input, rinse/repeat, and slowly over many Inputs our function will reach a steady state where our weight and bias derivative is zero, and we now have a pretty well trained, albiet very simple, neural network.
 
+This example leaves out A LOT of information, but it represents a good baseline for us to build upon.
+
 ## Non Linear Modeling
 
+Unfortunately that neural network will only work for linear models where we have a straight line relationship between all the Inputs and Desired values. If the relationship was non linear, then our Input values would forever be adjusting our single weight and bias to no single solution.
 
+So let's build upon what we have learnt, create a more complex neural network, and then teach it through back propogation again.
 
+We're going to build a neural network
+
+https://www.anotsorandomwalk.com/backpropagation-example-with-numbers-step-by-step/
